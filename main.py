@@ -25,8 +25,9 @@ def send_mail(content):
 
 
 def select_quote():
-    lines = open('quotes.txt').read().splitlines()
-    return random.choice(lines)
+    with open('quotes.txt') as quote_file:
+        lines = quote_file.read().splitlines()
+        return random.choice(lines)
 
 
 if today_is_thursday():
