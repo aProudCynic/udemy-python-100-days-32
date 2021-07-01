@@ -10,7 +10,7 @@ from secrets import (
 
 
 def today_is_thursday():
-    return datetime.now().weekday() == 3
+    return datetime.now().weekday() == 4
 
 
 def send_mail(content):
