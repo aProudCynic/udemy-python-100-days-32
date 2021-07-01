@@ -25,7 +25,7 @@ def send_mail(content):
 
 
 def select_quote():
-    lines = open('file.txt').read().splitlines()
+    lines = open('quotes.txt').read().splitlines()
     return random.choice(lines)
 
 
