@@ -1,5 +1,6 @@
 import smtplib
 from datetime import datetime
+import random
 
 from secrets import (
     TEST_EMAIL_ACCOUNT_USERNAME,
@@ -24,7 +25,8 @@ def send_mail(content):
 
 
 def select_quote():
-    pass
+    lines = open('file.txt').read().splitlines()
+    return random.choice(lines)
 
 
 if today_is_thursday():
