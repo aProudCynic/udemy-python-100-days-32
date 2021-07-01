@@ -1,4 +1,5 @@
 import smtplib
+from datetime import datetime
 
 from secrets import (
     TEST_EMAIL_ACCOUNT_USERNAME,
@@ -8,7 +9,7 @@ from secrets import (
 
 
 def today_is_thursday():
-    pass
+    return datetime.now().weekday() == 3
 
 
 def send_mail(content):
